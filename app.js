@@ -1,10 +1,4 @@
 var ACTIONS = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-var BULES = { rock: { beats: ['scissors', 'lizard']},
-  paper: { beats: ['rock', 'spock']},
-  scissors: { beats: ['paper', 'lizard']},
-  lizard: { beats: ['spock', 'paper']},
-  spock: { beats: ['scissors', 'rock']} 
-};
 var RULES = { rock: ['scissors', 'lizard'],
   paper: ['rock', 'spock'],
   scissors: ['paper', 'lizard'],
@@ -95,9 +89,5 @@ function gameOver() {
 }
 
 function restartGame() {
-  document.getElementById("game-over").style.width = "0";
-  ties = 0;
-  wins = 0;
-  losses = 0;
-  updateScreen();
+  location.reload();
 }  
