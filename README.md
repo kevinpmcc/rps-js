@@ -21,11 +21,11 @@ Installation Instructions
 start by cloning this repository.   
 In terminal or other Command line tool put in the below
 
-<code>git clone https://github.com/kevinpmcc/rps-challenge.git</code>
+<code>git clone https://github.com/kevinpmcc/rps-js.git</code>
 
 next move into the project folder by entering
 
-<code>cd rps</code>
+<code>cd rps-js</code>
 
 
 <code>open index.html</code>
