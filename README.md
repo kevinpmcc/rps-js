@@ -1,4 +1,4 @@
-Project Description
+ROCK PAPER SCISSORS LIZARD SPOCK 
 ----------
 This project is a multiplayer Rock,Paper,Scissors,Spock,Lizard(RPSlS) game.
 
