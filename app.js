@@ -87,8 +87,5 @@ function gameOver() {
 
 function restartGame() {
   document.getElementById("game-over").style.width = "0";
-  ties = 0;
-  wins = 0;
-  losses = 0;
-  updateScreen();
+  location.reload();
 }  
