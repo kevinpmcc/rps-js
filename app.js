@@ -1,4 +1,4 @@
-var ACTIONS = ['rock', 'paper', 'scissors'];
+var ACTIONS = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 var BULES = { rock: { beats: ['scissors', 'lizard']},
   paper: { beats: ['rock', 'spock']},
   scissors: { beats: ['paper', 'lizard']},
