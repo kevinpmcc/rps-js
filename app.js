@@ -1,13 +1,22 @@
 var ACTIONS = ['rock', 'paper', 'scissors'];
-var RULES = { rock: 'scissors',
-  paper: 'rock',
-  scissors: 'paper' 
+var BULES = { rock: { beats: ['scissors', 'lizard']},
+  paper: { beats: ['rock', 'spock']},
+  scissors: { beats: ['paper', 'lizard']},
+  lizard: { beats: ['spock', 'paper']},
+  spock: { beats: ['scissors', 'rock']} 
 };
+var RULES = { rock: ['scissors', 'lizard'],
+  paper: ['rock', 'spock'],
+  scissors: ['paper', 'lizard'],
+  lizard: ['spock', 'paper'],
+  spock: ['scissors', 'rock'] 
+};
+
 
 var wins = 0;
 var losses = 0;
 var ties = 0;
-
+var NUMBEROFACTIONS = 5;
 var self = this;
 
 function updateScreen() {
@@ -45,7 +54,7 @@ function computerChoice(){
 }
 
 function randomChoice() {
-  var randNumber = Math.floor((Math.random() * 10) + 1) % 3  ;
+  var randNumber = Math.floor((Math.random() * 10) + 1) % NUMBEROFACTIONS;
   return ACTIONS[randNumber]  ;
 }
 
@@ -53,7 +62,7 @@ function results(player, computer) {
   if( player == computer ) {
     playerTies();
   }
-  else if ( RULES[player] == computer) {
+  else if ( RULES[player].indexOf(computer) > -1 ) {
     playerWins()  ;
   } 
   else {
